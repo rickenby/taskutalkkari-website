@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Taskutalkkari – Kodin huoltokirja</title>
+  <title>Taskutalkkari – Kodin huoltokirja taskussasi</title>
+  <meta name="description" content="Taskutalkkari on ilmainen kodin huoltokirja omakotitaloasujalle. Pidä kirjaa laitteista, huolloista, remonteista, dokumenteista ja energiankulutuksesta – yhdessä paikassa, offline-first." />
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header class="hero">
@@ -12,8 +16,8 @@
       <h1 class="app-name">Taskutalkkari</h1>
       <p class="app-tagline">Kodin huoltokirja taskussasi</p>
       <p class="app-desc">
-        Pidä kirjaa kotisi laitteista, huoltotöistä ja dokumenteista –
-        yhdessä paikassa, offline-first.
+        Pidä kirjaa kotisi laitteista, huolloista, remonteista ja dokumenteista –
+        yhdessä paikassa, offline-first. Ilmainen sovellus omakotitaloasujalle.
       </p>
       <div class="store-buttons">
         <a href="#" class="store-btn store-btn--google" aria-label="Lataa Google Playsta">
@@ -23,10 +27,10 @@
             Google Play
           </span>
         </a>
-        <a href="#" class="store-btn store-btn--apple" aria-label="Lataa App Storesta">
+        <a href="#" class="store-btn store-btn--apple store-btn--coming-soon" aria-label="Tulossa App Storeen">
           <svg viewBox="0 0 24 24" fill="currentColor" class="store-icon"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
           <span>
-            <small>Saatavilla</small>
+            <small>Tulossa pian</small>
             App Store
           </span>
         </a>
@@ -35,26 +39,62 @@
   </header>
 
   <section class="features">
+    <h2 class="features-title">Kaikki kodin huolto yhdessä sovelluksessa</h2>
     <div class="features-inner">
       <div class="feature-card">
+        <div class="feature-icon">🔧</div>
+        <h3>Laitteet</h3>
+        <p>Rekisteröi kodin laitteet, tallenna mallinumerot, takuutiedot ja varaosat – kaikki löytyy yhdestä paikasta.</p>
+      </div>
+      <div class="feature-card">
         <div class="feature-icon">🏠</div>
-        <h3>Laitteet & huollot</h3>
-        <p>Rekisteröi kodin laitteet ja seuraa niiden huoltohistoriaa helposti.</p>
+        <h3>Huollot &amp; remontit</h3>
+        <p>Kirjaa huoltotyöt ja remontit tapahtumahistoriaan. Toistuvat tehtävät, muistutukset ja vuosikello pitävät kodin kunnossa.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">📄</div>
-        <h3>Dokumentit</h3>
-        <p>Tallenna takuutodistukset, sopimukset ja kuitit yhteen paikkaan.</p>
+        <h3>Dokumentit &amp; kuitit</h3>
+        <p>Tallenna takuutodistukset, sopimukset, kuitit ja raportit. Linkitä ne laitteisiin tai tapahtumiin.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">⚡</div>
         <h3>Energianseuranta</h3>
-        <p>Seuraa sähkön- ja lämmönkulutusta ja vertaile sopimuksia.</p>
+        <p>Seuraa sähkön-, lämmön- ja vedenkulutusta. Tuo Datahub-tiedot ja vertaile pörssisähkö- vs. kiinteähintasopimuksia.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">📋</div>
         <h3>PTS-suunnitelma</h3>
-        <p>Pitkän tähtäimen kunnossapitosuunnitelma – tiedät aina mitä on tulossa.</p>
+        <p>Pitkän tähtäimen kunnossapitosuunnitelma – tiedät aina mitä on tulossa ja paljonko se maksaa.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💰</div>
+        <h3>Kotitalousvähennys</h3>
+        <p>Seuraa työ- ja materiaalikustannuksia automaattisesti. Vuosiyhteenveto helpottaa veroilmoitusta.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="usp-section">
+    <div class="usp-inner">
+      <div class="usp-card">
+        <div class="usp-icon">📱</div>
+        <h3>Offline-first</h3>
+        <p>Kaikki toimii ilman nettiyhteyttä. Tietosi pysyvät laitteellasi.</p>
+      </div>
+      <div class="usp-card">
+        <div class="usp-icon">🇫🇮</div>
+        <h3>Suomalainen</h3>
+        <p>Suunniteltu suomalaiseen omakotitaloon – Datahub, kotitalousvähennys ja Ryhti valmiina.</p>
+      </div>
+      <div class="usp-card">
+        <div class="usp-icon">🏡</div>
+        <h3>Monikotituki</h3>
+        <p>Hallitse omakotitaloa ja kesämökkiä samassa sovelluksessa.</p>
+      </div>
+      <div class="usp-card">
+        <div class="usp-icon">🆓</div>
+        <h3>Ilmainen</h3>
+        <p>Kaikki perusominaisuudet ovat ja pysyvät ilmaisia.</p>
       </div>
     </div>
   </section>
@@ -65,7 +105,7 @@
       <a href="tietosuoja.html">Tietosuojaseloste</a>
       <a href="kayttoehdot.html">Käyttöehdot</a>
     </nav>
-    <p class="footer-copy">&copy; 2025 Taskutalkkari</p>
+    <p class="footer-copy">&copy; 2025–2026 Taskutalkkari</p>
   </footer>
 </body>
 </html>
