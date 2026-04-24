@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tietosuojaseloste – Taskutalkkari</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <a href="index.html" class="back-link">← Taskutalkkari</a>
+    <h1>Tietosuojaseloste</h1>
+    <p>EU:n yleisen tietosuoja-asetuksen (GDPR, 2016/679) mukainen seloste &bull; Voimassa 1.1.2025 alkaen</p>
+  </header>
+
+  <main class="page-main prose">
+
+    <h2>1. Rekisterinpitäjä</h2>
+    <p>
+      <strong>Taskutalkkari</strong><br />
+      [Kehittäjän nimi tai toiminimi]<br />
+      [Y-tunnus, jos rekisteröity]<br />
+      [Postiosoite, Suomi]<br />
+      Sähköposti: <a href="mailto:info@taskutalkkari.fi">info@taskutalkkari.fi</a>
+    </p>
+    <p>
+      Rekisterinpitäjä on vastuussa tässä selosteessa kuvatun henkilötietojen käsittelyn
+      lainmukaisuudesta. Rekisterinpitäjä ei ole nimennyt erillistä tietosuojavastaavaa (DPO),
+      koska käsittelyn laajuus ei edellytä sitä GDPR 37 artiklan nojalla.
+      Tietosuoja-asioissa voi ottaa yhteyttä yllä mainittuun sähköpostiosoitteeseen.
+    </p>
+
+    <h2>2. Yleistä sovelluksen tiedonkäsittelystä</h2>
+    <p>
+      Taskutalkkari on <strong>offline-first</strong>-mobiilisovellus. Kaikki käyttäjän
+      sovellukseen syöttämä tieto — kodit, laitteet, huoltotapahtumat, dokumentit, energiatiedot
+      ja muut kirjaukset — tallennetaan <strong>yksinomaan käyttäjän omalle laitteelle</strong>
+      paikalliseen SQLite-tietokantaan (<em>WatermelonDB</em>). Näitä tietoja ei siirretä
+      automaattisesti ulkopuolisille palvelimille eikä rekisterinpitäjälle.
+    </p>
+    <p>
+      Rekisterinpitäjä käsittelee henkilötietoja ainoastaan seuraavissa tilanteissa:
+    </p>
+    <ol>
+      <li>Kun käyttäjä lähettää palautelomakkeen verkkosivuston kautta.</li>
+      <li>Mahdollinen tuleva pilvitallennustoiminto (Premium, Phase 2) — tästä tiedotetaan erikseen ennen käyttöönottoa ja siihen pyydetään nimenomainen suostumus.</li>
+    </ol>
+
+    <h2>3. Käsiteltävät henkilötiedot ja käsittelyn tarkoitukset</h2>
+
+    <h3>3.1 Palautelomake</h3>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Tieto</th>
+          <th>Tarkoitus</th>
+          <th>Oikeusperuste (GDPR 6 art.)</th>
+          <th>Säilytysaika</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Nimi (vapaaehtoinen)</td>
+          <td>Yhteydenottoon vastaaminen</td>
+          <td>Oikeutettu etu (6.1 f)</td>
+          <td>12 kk viestin vastaanottamisesta</td>
+        </tr>
+        <tr>
+          <td>Sähköpostiosoite (vapaaehtoinen)</td>
+          <td>Vastauksen lähettäminen käyttäjälle</td>
+          <td>Oikeutettu etu (6.1 f)</td>
+          <td>12 kk viestin vastaanottamisesta</td>
+        </tr>
+        <tr>
+          <td>Palautteen sisältö ja tyyppi</td>
+          <td>Tuotekehitys, virheiden korjaus</td>
+          <td>Oikeutettu etu (6.1 f)</td>
+          <td>12 kk viestin vastaanottamisesta</td>
+        </tr>
+        <tr>
+          <td>Lomakkeen lähetysaika</td>
+          <td>Tekninen kirjaus</td>
+          <td>Oikeutettu etu (6.1 f)</td>
+          <td>12 kk</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      Palautelomakkeen kenttä <em>Nimi</em> ja <em>Sähköposti</em> ovat vapaaehtoisia.
+      Lomaketta ei voi käyttää markkinointiviestintään, eikä sähköpostiosoitteita lisätä
+      postituslistoille ilman erillistä suostumusta.
+    </p>
+
+    <h3>3.2 Verkkosivuston tekniset tiedot</h3>
+    <p>
+      Verkkosivusto ei käytä seurantaevästeitä, analytiikkapalveluja (kuten Google Analytics)
+      eikä mainontaan liittyviä evästeitä. Mahdollinen webhotelli voi tallentaa palvelimen
+      lokitietoja (IP-osoite, selaintyyppi, pyydetty sivu) teknisen toiminnan varmistamiseksi
+      ja tietoturvan ylläpitämiseksi. Nämä lokitiedot poistetaan automaattisesti isännöintitarjoajan
+      käytäntöjen mukaisesti, tyypillisesti 30–90 päivässä.
+    </p>
+
+    <h3>3.3 Mobiilisovelluksen käyttötiedot</h3>
+    <p>
+      Rekisterinpitäjä ei kerää, vastaanota eikä käsittele mobiilisovelluksen käyttäjien
+      käyttötietoja tai laitteelle tallennettuja tietoja. Sovellus ei sisällä analytiikka- tai
+      seurantakoodia (kuten Firebase Analytics, Mixpanel, Sentry tms.).
+    </p>
+    <p>
+      App Storen (Apple) ja Google Playn omat tiedonkeruukäytännöt ovat kunkin alustan
+      omien tietosuojaselosteen alaisia, eivätkä kuulu rekisterinpitäjän vastuupiiriin.
+    </p>
+
+    <h2>4. Tietojen luovuttaminen ja kolmannet osapuolet</h2>
+
+    <h3>4.1 Web3Forms</h3>
+    <p>
+      Verkkosivuston palautelomake hyödyntää <strong>Web3Forms</strong>-palvelua
+      sähköpostin välittämiseen. Lomakkeen lähettäminen siirtää syötetyt tiedot
+      Web3Formsin palvelimille käsittelyä varten. Web3Forms toimii henkilötietojen
+      käsittelijänä (GDPR 28 art.) tässä tiedonkäsittelyssä.
+    </p>
+    <p>
+      Web3Formsin palvelimet sijaitsevat EU/ETA-alueella ja palvelu on GDPR-yhteensopiva.
+      Lomakkeen kautta lähetetyt tiedot käytetään ainoastaan viestin välittämiseen
+      rekisterinpitäjälle eikä niitä käytetä muihin tarkoituksiin. Palaute voidaan
+      lähettää myös suoraan osoitteeseen
+      <a href="mailto:info@taskutalkkari.fi">info@taskutalkkari.fi</a>.
+    </p>
+
+    <h3>4.2 Muut kolmannet osapuolet</h3>
+    <p>
+      Henkilötietoja ei luovuteta markkinointitarkoituksiin, ei myydä eikä vuokrata
+      kolmansille osapuolille. Tietoja voidaan luovuttaa viranomaisille Suomen lain
+      tai EU-asetuksen velvoittaessa.
+    </p>
+
+    <h2>5. Tietoturva</h2>
+    <p>
+      Rekisterinpitäjä toteuttaa asianmukaiset tekniset ja organisatoriset toimenpiteet
+      henkilötietojen suojaamiseksi luvattomalta käytöltä, muuttamiselta, luovuttamiselta
+      tai tuhoamiselta. Palauteviestit toimitetaan salatussa yhteydessä (TLS) ja säilytetään
+      suojatussa sähköpostipalvelussa.
+    </p>
+    <p>
+      Mobiilisovelluksen tiedot on suojattu käyttöjärjestelmän tarjoamalla sovellustason
+      eristyksellä (iOS App Sandbox, Android-sovellushiekkalaatikko). Rekisterinpitäjällä
+      ei ole pääsyä laitteella oleviin tietoihin.
+    </p>
+
+    <h2>6. Rekisteröidyn oikeudet (GDPR 15–22 artiklat)</h2>
+    <p>
+      Rekisteröidyllä on seuraavat oikeudet rekisterinpitäjän käsittelemiin henkilötietoihin
+      (erityisesti palautelomakkeen kautta toimitettuihin tietoihin):
+    </p>
+    <ul>
+      <li><strong>Oikeus saada pääsy tietoihin (art. 15):</strong> Voit pyytää vahvistuksen siitä, käsittelemmekö sinua koskevia henkilötietoja, sekä jäljennöksen kyseisistä tiedoista.</li>
+      <li><strong>Oikeus tietojen oikaisemiseen (art. 16):</strong> Voit pyytää virheellisten tai puutteellisten tietojen korjaamista.</li>
+      <li><strong>Oikeus tietojen poistamiseen (art. 17):</strong> Voit pyytää tietojesi poistamista ("oikeus tulla unohdetuksi"), kun käsittelylle ei enää ole perustetta.</li>
+      <li><strong>Oikeus käsittelyn rajoittamiseen (art. 18):</strong> Voit pyytää käsittelyn rajoittamista tietyissä tilanteissa esim. kiistettäessä tietojen oikeellisuus.</li>
+      <li><strong>Oikeus siirtää tiedot järjestelmästä toiseen (art. 20):</strong> Voit pyytää toimittamiesi tietojen saamista jäsennellyssä, yleisesti käytetyssä muodossa.</li>
+      <li><strong>Vastustamisoikeus (art. 21):</strong> Voit vastustaa henkilötietojesi käsittelyä, kun käsittely perustuu oikeutettuun etuun. Emme jatka käsittelyä, ellei meillä ole siihen pakottavaa perustetta.</li>
+    </ul>
+    <p>
+      Pyyntöihin vastataan ilman aiheetonta viivästystä ja viimeistään kuukauden kuluessa.
+      Ota yhteyttä: <a href="mailto:info@taskutalkkari.fi">info@taskutalkkari.fi</a>.
+    </p>
+    <p>
+      Koska sovellukseen tallennetut tiedot sijaitsevat yksinomaan käyttäjän omalla laitteella,
+      käyttäjällä on täysi hallinta näihin tietoihin. Niitä voi muokata ja poistaa suoraan
+      sovelluksessa. Sovelluksen poistaminen laitteelta poistaa kaikki siihen tallennetut tiedot.
+    </p>
+
+    <h2>7. Oikeus tehdä valitus valvontaviranomaiselle</h2>
+    <p>
+      Rekisteröidyllä on oikeus tehdä valitus toimivaltaiselle tietosuojaviranomaiselle,
+      jos hän katsoo, että henkilötietojen käsittely loukkaa sovellettavaa tietosuojalainsäädäntöä.
+      Suomessa toimivaltainen viranomainen on:
+    </p>
+    <p>
+      <strong>Tietosuojavaltuutetun toimisto</strong><br />
+      Lintulahdenkuja 4, 00530 Helsinki<br />
+      Puhelin: 029 566 6700<br />
+      <a href="https://tietosuoja.fi" target="_blank" rel="noopener">tietosuoja.fi</a>
+    </p>
+
+    <h2>8. Alaikäiset</h2>
+    <p>
+      Taskutalkkari ei ole suunnattu alle 16-vuotiaille. Emme tietoisesti kerää alle
+      16-vuotiaiden henkilötietoja. Jos saat tietää, että lapsi on toimittanut meille
+      henkilötietoja, ota yhteyttä yllä mainittuun sähköpostiosoitteeseen, jotta voimme
+      poistaa kyseiset tiedot.
+    </p>
+
+    <h2>9. Tietosuojaselosteen muutokset</h2>
+    <p>
+      Pidätämme oikeuden päivittää tätä tietosuojaselostetta. Olennaisista muutoksista
+      ilmoitetaan verkkosivustolla ja/tai sovelluksen päivitysten yhteydessä. Päivitetyn
+      selosteen voimaantulopäivä ilmoitetaan tässä dokumentissa. Suosittelemme tutustumaan
+      selosteeseen säännöllisesti.
+    </p>
+    <p>
+      <em>Viimeksi päivitetty: 1.4.2025</em>
+    </p>
+
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-links">
+      <a href="palaute.html">Anna palautetta</a>
+      <a href="tietosuoja.html">Tietosuojaseloste</a>
+      <a href="kayttoehdot.html">Käyttöehdot</a>
+    </nav>
+    <p class="footer-copy">&copy; 2025 Taskutalkkari</p>
+  </footer>
+</body>
+</html>
