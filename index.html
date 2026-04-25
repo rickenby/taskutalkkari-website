@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Taskutalkkari – Kodin huoltokirja taskussasi</title>
   <meta name="description" content="Taskutalkkari on ilmainen kodin huoltokirja omakotitaloasujalle. Pidä kirjaa laitteista, huolloista, remonteista, dokumenteista ja energiankulutuksesta – yhdessä paikassa, offline-first." />
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Taskutalkkari – Kodin huoltokirja taskussasi" />
+  <meta property="og:description" content="Taskutalkkari on ilmainen kodin huoltokirja omakotitaloasujalle. Pidä kirjaa laitteista, huolloista, remonteista, dokumenteista ja energiankulutuksesta – yhdessä paikassa, offline-first." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://taskutalkkari.fi/" />
+  <meta property="og:image" content="https://taskutalkkari.fi/og-image.png" />
+  
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,13 +36,21 @@
             Google Play
           </span>
         </a>
-        <a href="#" class="store-btn store-btn--apple store-btn--coming-soon" aria-label="Tulossa App Storeen">
-          <svg viewBox="0 0 24 24" fill="currentColor" class="store-icon"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-          <span>
-            <small>Tulossa pian</small>
-            App Store
-          </span>
-        </a>
+      </div>
+
+      <div class="waitlist-container">
+        <p class="waitlist-title">Odotatko iOS-versiota?</p>
+        <form class="waitlist-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="SINUN-AVAIMESI" />
+          <input type="hidden" name="subject" value="Uusi tilaaja iOS-odotuslistalle!" />
+          <input type="hidden" name="redirect" value="https://taskutalkkari.fi/kiitos.html" />
+          <input type="checkbox" name="botcheck" style="display:none" />
+          
+          <div class="waitlist-input-group">
+            <input type="email" name="email" class="waitlist-input" placeholder="Sähköpostiosoitteesi" required />
+            <button type="submit" class="waitlist-btn">Liity odotuslistalle</button>
+          </div>
+        </form>
       </div>
     </div>
   </header>
@@ -41,33 +58,33 @@
   <section class="features">
     <h2 class="features-title">Kaikki kodin huolto yhdessä sovelluksessa</h2>
     <div class="features-inner">
-      <div class="feature-card">
-        <div class="feature-icon">🔧</div>
+      <div class="feature-card" style="animation-delay: 0.1s;">
+        <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
         <h3>Laitteet</h3>
         <p>Rekisteröi kodin laitteet, tallenna mallinumerot, takuutiedot ja varaosat – kaikki löytyy yhdestä paikasta.</p>
       </div>
-      <div class="feature-card">
-        <div class="feature-icon">🏠</div>
+      <div class="feature-card" style="animation-delay: 0.2s;">
+        <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
         <h3>Huollot &amp; remontit</h3>
         <p>Kirjaa huoltotyöt ja remontit tapahtumahistoriaan. Toistuvat tehtävät, muistutukset ja vuosikello pitävät kodin kunnossa.</p>
       </div>
-      <div class="feature-card">
-        <div class="feature-icon">📄</div>
+      <div class="feature-card" style="animation-delay: 0.3s;">
+        <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
         <h3>Dokumentit &amp; kuitit</h3>
         <p>Tallenna takuutodistukset, sopimukset, kuitit ja raportit. Linkitä ne laitteisiin tai tapahtumiin.</p>
       </div>
-      <div class="feature-card">
-        <div class="feature-icon">⚡</div>
+      <div class="feature-card" style="animation-delay: 0.4s;">
+        <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
         <h3>Energianseuranta</h3>
         <p>Seuraa sähkön-, lämmön- ja vedenkulutusta. Tuo Datahub-tiedot ja vertaile pörssisähkö- vs. kiinteähintasopimuksia.</p>
       </div>
-      <div class="feature-card">
-        <div class="feature-icon">📋</div>
+      <div class="feature-card" style="animation-delay: 0.5s;">
+        <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg></div>
         <h3>PTS-suunnitelma</h3>
         <p>Pitkän tähtäimen kunnossapitosuunnitelma – tiedät aina mitä on tulossa ja paljonko se maksaa.</p>
       </div>
-      <div class="feature-card">
-        <div class="feature-icon">💰</div>
+      <div class="feature-card" style="animation-delay: 0.6s;">
+        <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
         <h3>Kotitalousvähennys</h3>
         <p>Seuraa työ- ja materiaalikustannuksia automaattisesti. Vuosiyhteenveto helpottaa veroilmoitusta.</p>
       </div>

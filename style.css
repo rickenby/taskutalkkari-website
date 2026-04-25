@@ -158,6 +158,80 @@ body {
   opacity: 0.65;
 }
 
+/* ── WAITLIST FORM ─────────────────────── */
+
+.waitlist-container {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.waitlist-title {
+  font-size: 0.95rem;
+  color: var(--accent-light);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.waitlist-form {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.waitlist-input-group {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.waitlist-input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.waitlist-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.waitlist-input:focus {
+  border-color: var(--accent-light);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.waitlist-btn {
+  padding: 0.8rem 1.25rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.waitlist-btn:hover {
+  background: var(--accent-light);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 480px) {
+  .waitlist-input-group {
+    flex-direction: column;
+  }
+  .waitlist-btn {
+    width: 100%;
+  }
+}
+
 /* ── FEATURES ──────────────────────────── */
 
 .features {
@@ -188,11 +262,38 @@ body {
   padding: 1.5rem 1.25rem;
   box-shadow: var(--shadow);
   text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .feature-icon {
-  font-size: 2rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.85rem;
+  color: var(--accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-icon svg {
+  width: 32px;
+  height: 32px;
+  stroke-width: 1.75;
 }
 
 .feature-card h3 {
